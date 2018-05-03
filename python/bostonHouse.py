@@ -9,6 +9,8 @@ boston = datasets.load_boston(return_X_y=False)
 X = boston.get('data')
 y = boston.get('target')
 
+print(X, y)
+
 # splitting X and y into training and testing sets
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4,
